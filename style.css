@@ -1,0 +1,21 @@
+.header{
+    display:flex;
+}
+
+.header-left-flex{
+    display:flex;
+    height: 33px;
+    gap:12px;
+}
+
+.header-right-flex{
+    display:flex;
+    height:33px;
+    position:fixed;
+    right:25px;
+    gap: 16px;
+}
+
+#search-bar{
+    width:500px;
+}
