@@ -26,16 +26,19 @@
 
 .page-grid{
 display:grid;
+grid-template-areas:
+    'video recommended'
+    'comments recommended';
 }
 
 .video-area-flex{
     display:flex;
     width:1300px;
     height:1000px;
-    background-color:rgb(33, 74, 102);
     margin-top:16px;
+    margin-left: 40px;
     flex-direction: column;
-    float:left;
+    grid-area: video;
 }
 
 #oxia-video{
@@ -56,21 +59,50 @@ display:grid;
 .recommended-videos-flex{
     display:flex;
     flex-direction: column;
-    background-color:red;
     width:400px;
     height:2000px;
-    margin-top:16px;
+    margin-top:32px;
     gap:7px;
+    grid-area: recommended;
 }
 
 .recommended-video-grid{
     display:grid;
-    background-color:brown;
+    grid-template-areas:
+    'thumb title'
+    'thumb info';
+    height:94px;
+}
+
+.recommended-video-thumbnail{
+    grid-area: thumb;
+}
+
+.recommended-video-title{
+    grid-area: title;
+    font-family:Arial;
+    margin:0;
+    margin-left:3px;
+    font-size: 16px;
+}
+
+.recommended-video-info{
+    grid-area: info;
+    font-family:Arial;
+    font-size:15px;
+    margin-left:3px;
+    margin-top:0px;
 }
 
 .comments-flex{
     display:flex;
-    background-color:blue;
-    width:90px;
-    height:80px;
+    width:1300px;
+    height:670px;
+    grid-area: comments;
+    margin-left:40px;
+}
+
+.comments-number{
+    margin-left:30px;
+    font-family: Arial;
 }
