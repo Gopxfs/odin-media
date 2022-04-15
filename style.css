@@ -2,6 +2,10 @@
     display:flex;
 }
 
+.header-profile-picture{
+    border-radius:50%;
+}
+
 .header-left-flex{
     display:flex;
     height: 33px;
@@ -11,11 +15,62 @@
 .header-right-flex{
     display:flex;
     height:33px;
-    position:fixed;
     right:25px;
     gap: 16px;
+    margin-left:auto;
 }
 
 #search-bar{
     width:500px;
+}
+
+.page-grid{
+display:grid;
+}
+
+.video-area-flex{
+    display:flex;
+    width:1300px;
+    height:1000px;
+    background-color:rgb(33, 74, 102);
+    margin-top:16px;
+    flex-direction: column;
+    float:left;
+}
+
+#oxia-video{
+    margin-left:30px;
+    margin-top:16px;
+}
+
+#oxia-title{
+    margin-left:30px;
+    font-family:Arial;
+}
+
+.oxia-info{
+    margin-left:30px;
+    font-family: Arial;
+}
+
+.recommended-videos-flex{
+    display:flex;
+    flex-direction: column;
+    background-color:red;
+    width:400px;
+    height:2000px;
+    margin-top:16px;
+    gap:7px;
+}
+
+.recommended-video-grid{
+    display:grid;
+    background-color:brown;
+}
+
+.comments-flex{
+    display:flex;
+    background-color:blue;
+    width:90px;
+    height:80px;
 }
