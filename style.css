@@ -25,16 +25,18 @@
 }
 
 .page-grid{
-display:grid;
-grid-template-areas:
+    display:grid;
+    row-gap:0px;
+    grid-template-areas:
     'video recommended'
     'comments recommended';
+
 }
 
 .video-area-flex{
     display:flex;
     width:1300px;
-    height:1000px;
+    height:900px;
     margin-top:16px;
     margin-left: 40px;
     flex-direction: column;
@@ -60,7 +62,7 @@ grid-template-areas:
     display:flex;
     flex-direction: column;
     width:400px;
-    height:2000px;
+    height:1850px;
     margin-top:32px;
     gap:7px;
     grid-area: recommended;
@@ -96,8 +98,9 @@ grid-template-areas:
 
 .comments-flex{
     display:flex;
+    flex-direction: column;
     width:1300px;
-    height:670px;
+    height:900px;
     grid-area: comments;
     margin-left:40px;
 }
@@ -106,3 +109,63 @@ grid-template-areas:
     margin-left:30px;
     font-family: Arial;
 }
+
+.comments-profile-picture{
+    border-radius:50%;
+    height:50px;
+    width:50px;
+}
+
+.comment-grid{
+    display:grid;
+    gap:5px;
+    justify-content: start;
+    margin-left:30px;
+    margin-top:25px;
+    height:50px;
+    grid-template-areas:
+    'icon author time'
+    'icon comment comment';
+}
+
+.comments-add-flex{
+    display:flex;
+    margin-left:30px;
+    flex-direction: row;
+    width:1200px;
+    height: 50px;
+    gap:5px;
+}
+
+.comment-add-text{
+    align-self: center;
+    height: 40px;
+    width:800px;
+}
+
+.comment-profile-picture{
+    border-radius:50%;
+    grid-area: icon;
+    margin:0;
+}
+
+.comment-comment{
+    font-family: Arial;
+    grid-area: comment;
+    margin:0;
+}
+
+.comment-author{
+    font-family: Arial;
+    grid-area: author;
+    margin:0;
+}
+
+.comment-time{
+    font-family: Arial;
+    grid-area: time;
+    margin:0;
+    font-style:italic;
+}
+
+
